@@ -3,15 +3,16 @@ JCBridge (JVM-CLR Object Bridge) allows the execution of JVM native languages, l
 More information on [www.jcobridge.com](https://www.jcobridge.com)
 
 ## The Short way
-to explore the examples you need to perform the following pass
-1. Download the last trial relise from this [link](https://www.jcobridge.com/wpdownloads/)
+to explore the examples you need to perform the following steps:
+1. Download the last trial release from this [link](https://www.jcobridge.com/wpdownloads/)
 2. Install it following the wizard
-3. Clone this repository 
-4. Enjoy the jcobridge with your preferred development tools
+3. Clone this repository
+4. Use directly the executables ready into Output directories, or
+5. Enjoy the jcobridge with your preferred development tools
 
 ## Repository Content
-In this repository is possible to find example code for the different programming language supported by JCObridge. 
-The examples are organized in tho main folder, JVM and CLR that contains the relative projects. Before execute the code is needed that examples of booth world are compiled, because no runtime compilation of foreign code is done, only execution. 
+In this repository it is possible to find example code for the different programming language supported by JCObridge. 
+The examples are organized in two main folder, JVM and CLR that contains the relative projects. Before execute the code is needed that examples of both world are compiled, because no runtime compilation of foreign code is done, only execution. 
 ## .NET to Java Examples
 ### Java Class Use Example
 This is a basic example where we call the simple class defined in JavaClass.java from a .NET application.
@@ -50,7 +51,7 @@ public class JavaClass {
 	}
 }
 ```
-in the \CLR\JavaClassUseExample\program.cs we have the simple .NET c# application
+in the \CLR\JavaClassUseExample\program.cs we have the simple .NET C# application
 
 ```c
 using MASES.JCBridge.C2JBridge;
