@@ -4,7 +4,7 @@ More information on [www.jcobridge.com](https://www.jcobridge.com)
 
 ## The Short way
 to explore the examples you need to perform the following pass
-1. Download the last trial relise from this [link](http://www.jcobridge.com/downloads/latest.zip)
+1. Download the last trial relise from this [link](https://www.jcobridge.com/wpdownloads/)
 2. Install it following the wizard
 3. Clone this repository 
 4. Enjoy the jcobridge with your preferred development tools
