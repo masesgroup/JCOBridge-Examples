@@ -1,0 +1,14 @@
+﻿<DockPanel x:Class="MASES.CLRTests.WPFTestControl.TestControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MASES.CLRTests.WPFTestControl"
+             mc:Ignorable="d">
+    <DockPanel DockPanel.Dock="Top">
+        <ComboBox Name="cbContent"/>
+        <Button Name="btnSelectFromComboBox" Content="Press to select from ComboBox" Click="btnSelectFromComboBox_Click"/>
+        <Button Name="btnSelectFromTextBox" Content="Press to select from TextBox" Click="btnSelectFromTextBox_Click"/>
+    </DockPanel>
+    <TextBox Name="contentBox" Text="This is a text" AcceptsReturn="True" TextWrapping="WrapWithOverflow"/>
+</DockPanel>
