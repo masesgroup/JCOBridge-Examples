@@ -1,5 +1,32 @@
+# JCOBridge main features
+Field proven
+Realized on top of the field proven DLR plugin available in the Sinapse platform (https://www.sinapsesystem.com), JCOBridge guarantees the best performance in JVM and CLR worlds integration.
+
+JVM
+- Retrieve CLR Type
+- Instantiate CLR object
+- Invoke static methods
+- Invoke instance methods
+- Get/Set static properties
+- Get/Set instance properties
+- Set Delegates
+- Subscribe/Unsubscribe events
+- Integrates WPF controls into AWT/Swing window
+- Integrate WinForms controls into AWT/Swing window
+- Integrate complex .NET Graphical user interfaces objects into AWT/Swing window
+- User interface Controls, properties and events management
+CLR
+- Retrieve JVM class
+- Instantiate JVM objects
+- Invoke static methods
+- Invoke instance methods
+- Get/Set static fields
+- Get/Set instance fields
+- Use dynamic access to write code in a seamless way as it is done in Java language
+- Use specific interface to direct manages methods and fields
+
 # JCOBridge Examples
-JCBridge (JVM-CLR Object Bridge) allows the execution of JVM native languages, like java and scala, from CLR/.NET languages and vice-versa, it allows to import and use libraries, components and also to manage graphical user interface from one programming world to the other.
+JCOBridge (JVM-CLR Object Bridge) allows the execution of JVM native languages, like java and scala, from CLR/.NET languages and vice-versa, it allows to import and use libraries, components and also to manage graphical user interface from one programming world to the other.
 More information on [www.jcobridge.com](https://www.jcobridge.com)
 
 ## The Short way
