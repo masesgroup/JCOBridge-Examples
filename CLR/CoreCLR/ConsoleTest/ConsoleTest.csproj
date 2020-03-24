@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	<DefineConstants>$(DefineConstants);JCOBRIDGE_CORE</DefineConstants>
+    <TargetFrameworks>netcoreapp3.1;net461</TargetFrameworks>
+	<OutputPath>..\..\OutputCore</OutputPath>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Common\InitEnvironment.cs">
+      <Link>InitEnvironment.cs</Link>
+    </Compile>
+	<Compile Include="..\..\Framework\ConsoleTest\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+	<Compile Include="..\..\Framework\ConsoleTest\ArrayTest.cs">
+      <Link>ArrayTest.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JCOBridge" Version="2.0.0" />
+  </ItemGroup>
+</Project>
