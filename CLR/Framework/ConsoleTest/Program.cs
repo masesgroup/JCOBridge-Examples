@@ -37,20 +37,6 @@ namespace ConsoleTest
         {
             try
             {
-                JCOBridge.Initialize();
-            }
-            catch (FallbackInTrialModeException)
-            {
-                // nothing to do 
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                return;
-            }
-
-            try
-            {
                 var testClass = new TestClass();
                 testClass.Execute();
                 Console.WriteLine("Enter a key to exit.");

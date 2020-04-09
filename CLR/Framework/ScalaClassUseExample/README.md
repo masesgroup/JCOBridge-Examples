@@ -87,19 +87,6 @@ namespace ScalaClassUseExample
         {
             try
             {
-                JCOBridge.Initialize();
-            }
-            catch (FallbackInTrialModeException)
-            {
-                // nothing to do 
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                return;
-            }
-            try
-            {
                 TestClass Test = new TestClass();
                 Test.Execute();
             }
