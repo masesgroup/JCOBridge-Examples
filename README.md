@@ -81,7 +81,7 @@ public class JavaClass {
 ```
 in the \CLR\JavaClassUseExample\program.cs we have the simple .NET C# application
 
-```c
+```c#
 using MASES.LicenseManager.Common;
 using MASES.JCBridge.C2JBridge;
 using System;
@@ -92,12 +92,6 @@ namespace JavaClassUseExample
     {
         static void Main(string[] args)
         {
-            try
-            {
-                JCOBridge.Initialize();
-            }
-            catch (FallbackInTrialModeException) { }
-            catch (Exception e) { Console.WriteLine(e.Message); return; }
             TestClass Test = new TestClass();
             Test.Execute();
         }
@@ -130,7 +124,7 @@ Hello World from Java!! 2 + 3 = 5 and sin(3,1415927) = 1,00000000
 
 This example is an extension of the _Java Class Use Example_ where Environment parameters are configured in the .NET _TestClass_ class.
 
-```c
+```c#
 
 class TestClass : SetupJVMWrapper
 {
@@ -209,7 +203,7 @@ A WPF panel with his complete logic that will be used to demonstrate _User Inter
 This is a basic example where we call the simple class defined in CSharpClass.cs from a Java application.
 in the \CLR\CSharpClass\CSharpClass.cs we have a simple class
 
-```c
+```c#
 using System;
 
 namespace MASES.CLRTests
@@ -447,7 +441,7 @@ final class ScalaClass(aString: String, val anInteger: Int) {
 
 In the \CLR\ScalaClassUseExample\Program.cs we have a simple application that use the defined ScalaClass 
 
-```c
+```c#
 using CommonTest;
 using MASES.JCOBridge.C2JBridge;
 using MASES.LicenseManager.Common;

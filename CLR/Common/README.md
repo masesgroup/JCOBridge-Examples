@@ -2,7 +2,7 @@
 
 To setup environment it is possible to embedded the info within the application or use the command-line switches to send to JVM all possible options.
 
-```c
+```c#
 using MASES.JCOBridge.C2JBridge;
 using System.Collections.Generic;
 

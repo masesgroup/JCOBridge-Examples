@@ -2,7 +2,7 @@
 
 This example is an extension of the _Java Class Use Example_ where Environment parameters are configured in the .NET _TestClass_ class.
 
-```c
+```c#
 
 class TestClass : SetupJVMWrapper
 {

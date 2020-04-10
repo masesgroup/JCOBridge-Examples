@@ -3,7 +3,7 @@
 This is a basic example where we call the simple class defined in CSharpClass.cs from a Java application.
 in the \CLR\CSharpClass\CSharpClass.cs we have a simple class
 
-```c
+```c#
 using System;
 
 namespace MASES.CLRTests

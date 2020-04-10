@@ -28,7 +28,7 @@ final class ScalaClass(aString: String, val anInteger: Int) {
 
 In the \CLR\ScalaClassUseExample\Program.cs we have a simple application that use the defined ScalaClass 
 
-```c
+```c#
 using CommonTest;
 using MASES.JCOBridge.C2JBridge;
 using MASES.LicenseManager.Common;

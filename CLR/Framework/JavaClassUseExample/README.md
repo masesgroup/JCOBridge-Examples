@@ -37,7 +37,7 @@ public class JavaClass {
 ```
 in the \CLR\JavaClassUseExample\program.cs we have the simple .NET C# application
 
-```c
+```c#
 using CommonTest;
 using MASES.JCOBridge.C2JBridge;
 using MASES.LicenseManager.Common;

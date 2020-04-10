@@ -38,7 +38,7 @@ public class JavaClass {
 ```
 in the \CLR\JavaClassUseExample\program.cs we have the simple .NET C# application
 
-```c
+```c#
 using MASES.LicenseManager.Common;
 using MASES.JCBridge.C2JBridge;
 using System;
@@ -87,7 +87,7 @@ Hello World from Java!! 2 + 3 = 5 and sin(3,1415927) = 1,00000000
 
 This example is an extension of the _Java Class Use Example_ where Environment parameters are configured in the .NET _TestClass_ class.
 
-```c
+```c#
 
 class TestClass : SetupJVMWrapper
 {
