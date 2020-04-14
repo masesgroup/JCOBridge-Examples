@@ -164,3 +164,6 @@ A WPF panel with his complete logic that will be used to demonstrate _User Inter
 
 ## .NET to Scala examples
 [Documentation here](ScalaClassUseExample/README.md)
+
+## Requirements
+These examples needs the installation of the .NET Framework version available on [JCOBridge](https://www.jcobridge.com) website

@@ -1,4 +1,5 @@
 ## .NET Core to Java Examples
+These examples demonstrate the use of JCOBridge from Nuget package. All examples follows the one in Framework version.
 
 ### Java Class Use Example
 
