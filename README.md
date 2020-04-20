@@ -44,7 +44,7 @@ In this repository it is possible to find example code for the different program
 The examples are organized in two main folder, JVM and CLR that contains the relative projects. Before execute the code is needed that examples of both world are compiled, because no runtime compilation of foreign code is done, only execution. 
 ## .NET to Java Examples
 ### .NET Core Linux/Windows Graphical User Interface example
-The project [Cross Platform GUI](/CLR/CoreCLR/crossPlatformGUIExample/Readme.md) shows how to use AWT to create a cross-platform graphical user interface for .NET Core on Windows and Linux hosts. To use Swing simply change the controls within the code to your preferred ones.
+The project [Cross Platform GUI](/CLR/CoreCLR/crossPlatformGUIExample/README.md) shows how to use AWT to create a cross-platform graphical user interface for .NET Core on Windows and Linux hosts. To use Swing simply change the controls within the code to your preferred ones.
 
 ### Java Class Use Example
 This is a basic example where we call the simple class defined in JavaClass.java from a .NET application.
