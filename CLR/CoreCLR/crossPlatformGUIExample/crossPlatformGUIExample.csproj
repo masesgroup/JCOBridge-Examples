@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	  <DefineConstants>$(DefineConstants)</DefineConstants>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+	  <OutputPath>..\..\OutputCore</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Common\InitEnvironment.cs">
+      <Link>InitEnvironment.cs</Link>
+    </Compile>
+	<Compile Include="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JCOBridge" Version="2.1.0" />
+  </ItemGroup>
+</Project>

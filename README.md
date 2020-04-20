@@ -1,8 +1,9 @@
 # JCOBridge main features
 Field proven
-Realized on top of the field proven DLR plugin available in the Sinapse platform (https://www.sinapsesystem.com), JCOBridge guarantees the best performance in JVM and CLR worlds integration.
 
-JVM ( Available only for .NET Framework on https://www.jcobridge.com, .NET Core coming soon)
+Built on top of the field proven DLR plugin available in the [Sinapse platform](https://www.sinapsesystem.com), JCOBridge guarantees the best performance in JVM and CLR worlds integration.
+
+JVM ( Available only for .NET Framework on https://www.jcobridge.com, .NET Core available on supported OS and Architectures)
 >- Retrieve CLR Type
 >- Instantiate CLR object
 >- Invoke static methods
@@ -42,6 +43,9 @@ to explore the examples you need to perform the following steps:
 In this repository it is possible to find example code for the different programming language supported by JCObridge. 
 The examples are organized in two main folder, JVM and CLR that contains the relative projects. Before execute the code is needed that examples of both world are compiled, because no runtime compilation of foreign code is done, only execution. 
 ## .NET to Java Examples
+### .NET Core Linux/Windows Graphical User Interface example
+The project [Cross Platform GUI](CLR/CoreCLR/crossPlatformGUIExample/Readme.md) shows how to use AWT to create a cross-platform graphical user interface for .NET Core on Windows and Linux hosts. To use Swing simply change the controls within the code to your preferred ones.
+
 ### Java Class Use Example
 This is a basic example where we call the simple class defined in JavaClass.java from a .NET application.
 in the /JVM/java/src/JavaClass.java we have a simple class
