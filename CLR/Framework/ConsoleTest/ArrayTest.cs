@@ -6,8 +6,8 @@ namespace ConsoleTest
     {
         public void ArrayTest()
         {
-            JVM.ImportPackage("java.lang");
-            JVM.ImportPackage("java.util");
+            ImportPackage("java.lang");
+            ImportPackage("java.util");
             int length = 100;
             var array = DynJVM.ArrayList.@new(length);
 

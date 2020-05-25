@@ -20,9 +20,12 @@
 	<Compile Include="..\..\Framework\ConsoleTest\ArrayTest.cs">
       <Link>ArrayTest.cs</Link>
     </Compile>
+	<Compile Include="..\..\Framework\ConsoleTest\CLRJVMSharedObjects.cs">
+      <Link>CLRJVMSharedObjects.cs</Link>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JCOBridge" Version="2.1.0" />
+    <PackageReference Include="JCOBridge" Version="2.2.0" />
   </ItemGroup>
 </Project>

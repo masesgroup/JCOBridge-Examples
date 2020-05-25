@@ -19,7 +19,6 @@ namespace ConsoleTest
         public override void Execute()
         {
             ArrayTest();
-#if !JCOBRIDGE_CORE
             try
             {
                 InitializeRemote();
@@ -27,7 +26,6 @@ namespace ConsoleTest
             catch (FallbackInTrialModeException) { }
 
             SharedObjectsTest();
-#endif
         }
     }
 

@@ -47,7 +47,7 @@ partial class TestClass : BaseTestClass
 
         var listener = new CLRActionListener(ActionDone);
 
-        JVM.InitializeListener(listener);
+        InitializeListener(listener);
         var frame = DynJVM.Frame.@new("AWT GUI");
 
         frame.setSize(300, 300);
@@ -81,7 +81,7 @@ partial class TestClass : BaseTestClass
         buttonWrite.removeActionListener(listener.DynListener);
         buttonClose.removeActionListener(listener.DynListener);
 
-        JVM.ReleaseListener(listener);
+        ReleaseListener(listener);
     }
 }
 

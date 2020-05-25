@@ -28,8 +28,8 @@ namespace ConsoleTest
             javaBridge = RemoteJCOBridge.CreateNew();
             */
             MyCLRClass clrClass = new MyCLRClass();
-            JVM.RegisterCLRGlobal("MyCLRClass", clrClass);
-            var isEqual = JVM.GetCLRGlobal("MyCLRClass").Equals(clrClass);
+            RegisterCLRGlobal("MyCLRClass", clrClass);
+            var isEqual = GetCLRGlobal("MyCLRClass").Equals(clrClass);
             Console.WriteLine("Objects are equal: {0}", isEqual);
 
             // we call JVM which will use the shared object to invoke the Add method defined in CLR
@@ -38,7 +38,7 @@ namespace ConsoleTest
             Console.WriteLine("New Result is {0}", clrClass.Result);
 
             DynJVM.GlobalVariableTest.createGlobal();
-            var resultSharedDialog = JVM.GetJVMGlobal("SharedDialog");
+            var resultSharedDialog = GetJVMGlobal("SharedDialog");
             resultSharedDialog.Invoke("setVisible", true);
             resultSharedDialog.Invoke("setTitle", "SharedObjectsTest");
         }
