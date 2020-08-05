@@ -1,4 +1,1 @@
-theme: jekyll-theme-cayman
-
-plugins:
-  - jekyll-sitemap
+remote_theme: rundocs/jekyll-rtd-theme
