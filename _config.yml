@@ -1,1 +1,1 @@
-remote_theme: rundocs/jekyll-rtd-theme
+remote_theme: "mmistakes/minimal-mistakes@4.20.1"
