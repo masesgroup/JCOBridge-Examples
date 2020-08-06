@@ -1,0 +1,47 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "CLR Examples"
+    url: /CLR/
+  - title: "JVM Examples"
+    url: /JVM/
+  - title: "JCOBridge"
+    url: https://www.jcobridge.com
+
+docs:
+  - title: JCOBridge Examples
+    children:
+      - title: "Home"
+        url: /
+      - title: "CLR Examples"
+        url: /CLR/
+      - title: "JVM Examples"
+        url: /JVM/
+
+  - title: CLR Examples
+    children:
+      - title: ".NET Framework Examples"
+        url: /CLR/Framework/
+      - title: ".NET Core Examples"
+        url: /CLR/CoreCLR/
+      - title: ".NET Common"
+        url: /CLR/Common/
+      children:
+          - title: "Authors"
+            url: /docs/authors/
+          - title: "Layouts"
+            url: /docs/layouts/
+
+  - title: JVM Examples
+    children:
+      - title: "Java Examples"
+        url: /JVM/Java/
+      - title: "Scala Examples"
+        url: /JVM/Scala/
+
+  - title: External links
+    children:
+      - title: "JCOReflector"
+        url: https://masesgroup.github.io/JCOReflector
+      - title: "JCOBridge"
+        url: https://www.jcobridge.com

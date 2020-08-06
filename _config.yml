@@ -3,3 +3,14 @@ remote_theme: "mmistakes/minimal-mistakes@4.20.1"
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
+
+share: true
+
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
