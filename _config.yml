@@ -7,10 +7,9 @@ plugins:
 share: true
 
 defaults:
-  # _docs
   - scope:
       path: ""
-      type: docs
+      type: pages
     values:
       sidebar:
         nav: "docs"

@@ -26,11 +26,6 @@ docs:
         url: /CLR/CoreCLR/
       - title: ".NET Common"
         url: /CLR/Common/
-      children:
-          - title: "Authors"
-            url: /docs/authors/
-          - title: "Layouts"
-            url: /docs/layouts/
 
   - title: JVM Examples
     children:
