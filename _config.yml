@@ -4,12 +4,10 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
 
-share: true
-
 defaults:
   - scope:
       path: ""
-      type: pages
     values:
+      share: true
       sidebar:
         nav: "docs"
