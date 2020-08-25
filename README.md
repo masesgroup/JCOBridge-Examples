@@ -1,4 +1,5 @@
 # JCOBridge main features
+
 Field proven
 
 Built on top of the field proven DLR plugin available in the [Sinapse platform](https://www.sinapsesystem.com), JCOBridge guarantees the best performance in JVM and CLR worlds integration.
@@ -28,10 +29,12 @@ CLR ( Available for .NET Framework on Windows and .NET Core on Windows and Linux
 >- Use specific interface to direct manages methods and fields
 
 # JCOBridge Examples
+
 JCOBridge (JVM-CLR Object Bridge) allows the execution of JVM native languages, like java and scala, from CLR/.NET languages and vice-versa, it allows to import and use libraries, components and also to manage graphical user interface from one programming world to the other.
 More information on [www.jcobridge.com](https://www.jcobridge.com)
 
 ## The Short way
+
 to explore the examples you need to perform the following steps:
 1. Download the last trial release from this [link](https://www.jcobridge.com/wpdownloads/)
 2. Install it following the wizard
@@ -40,13 +43,18 @@ to explore the examples you need to perform the following steps:
 5. Enjoy the jcobridge with your preferred development tools
 
 ## Repository Content
+
 In this repository it is possible to find example code for the different programming language supported by JCObridge. 
 The examples are organized in two main folder, JVM and CLR that contains the relative projects. Before execute the code is needed that examples of both world are compiled, because no runtime compilation of foreign code is done, only execution. 
+
 ## .NET to Java Examples
+
 ### .NET Core Linux/Windows Graphical User Interface example
+
 The project [Cross Platform GUI](/CLR/CoreCLR/crossPlatformGUIExample/README.md) shows how to use AWT to create a cross-platform graphical user interface for .NET Core on Windows and Linux hosts. To use Swing simply change the controls within the code to your preferred ones.
 
 ### Java Class Use Example
+
 This is a basic example where we call the simple class defined in JavaClass.java from a .NET application.
 in the /JVM/java/src/JavaClass.java we have a simple class
 
@@ -124,6 +132,7 @@ Executing the code we have the following output:
 ```
 Hello World from Java!! 2 + 3 = 5 and sin(3,1415927) = 1,00000000
 ```
+
 ### JVM Environment Example
 
 This example is an extension of the _Java Class Use Example_ where Environment parameters are configured in the .NET _TestClass_ class.
@@ -184,6 +193,7 @@ class TestClass : SetupJVMWrapper
 
 ```
 ### ConsoleTest
+
 This is a more complex application that explores the ability of JCOBridge doing the following operations:
 -Execute java code in the .NET environment using the _Dynamic JVM wrapper_
 -Manage shared object
@@ -195,13 +205,19 @@ This is a more complex application that explores the ability of JCOBridge doing 
 ## .NET Libraries for use within the _Java to .NET Examples_
 
 ### CSharpClass
-This library contain a single class that provide double and string operations to be called from JVM .
+
+This library contain a single class that provide double and string operations to be called from JVM.
+
 ### WinFormsTestControl
+
 A Windows Form panel with his complete logic that will be used to demonstrate _User Interface Integration_ in a Java Graphical application.
+
 ### WPFTestControl
+
 A WPF panel with his complete logic that will be used to demonstrate _User Interface Integration_ in a Java Graphical application.
 
 ## Java to .NET Examples
+
 ### CSharp Class Use Examples
 
 This is a basic example where we call the simple class defined in CSharpClass.cs from a Java application.
@@ -285,6 +301,7 @@ Hello World from C#!! 2 + 3 = 5 and sin(3,14159265) = 1,00000000
 ```
 
 ### Windows Forms and WPF User Interface Integration
+
 In this little more complex example we integrate into an awt java user interface two different complex control, taken from two .NET library. 
 The first control is a Windows Form, the second one is a WPF object. 
 The application in \JVM\Java\srcAWTWinFormsWPF.java expose the complete process from the control reference and generation to the .NET event listener registration to the .NET events callback management.
@@ -388,9 +405,13 @@ public class AWTWinFormsWPF implements IJCVoidEventEmit {
 }
 ```
 ## Classes to be used from the CLR test applications
+
 ### JavaClass
+
 A single class that provide double and string operations to be called from the .NET CLR.
+
 ### GlobalVariableTest
+
 A class that contains two methods and display how to register and use Shared global variables and object
 
 ```java
@@ -416,6 +437,7 @@ The createGlobal method create a global awt dialog and register it to be used se
 The testMyCLRClass show how to use a registered CLR global object, in the CLR example we create this object from the .NET side and we call this function to use it and demonstrate hot operations are reflected between JVM and CLR in a transparent manner. 
 
 ## .NET to Scala Example
+
 A simple Scala class is defined to be used from CLR in JVM\Scala\scalaclass\src\main\scala\ScalaClass.class
 Call compile and execute batch script in JVM\Scala\
 Before call compile and execute batch script Scala [binaries](https://downloads.lightbend.com/scala/2.12.8/scala-2.12.8.msi) shall be installed.
@@ -521,6 +543,7 @@ namespace ScalaClassUseExample
 In Scala all the needed libraries shall be explicitly added to the base path.  
 
 ## Scala to .NET Example
+
 In this example we call .NET object from Scala language via JCOBridge.
 Before call compile and execute batch script Scala [binaries](https://downloads.lightbend.com/scala/2.12.8/scala-2.12.8.msi) shall be installed.
 
