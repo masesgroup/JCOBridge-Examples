@@ -5,9 +5,12 @@ plugins:
   - jekyll-sitemap
 
 defaults:
+  # _docs
   - scope:
       path: ""
+      type: docs
     values:
+      layout: single
       share: true
       sidebar:
         nav: "docs"
