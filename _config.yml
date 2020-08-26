@@ -11,5 +11,7 @@ defaults:
   - scope:
       path: ""
     values:
+      layout: single
+      share: true
       sidebar:
         nav: "docs"
