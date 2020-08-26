@@ -14,4 +14,11 @@ defaults:
       layout: single
       share: true
       sidebar:
-        nav: "docs"
+        nav: "sidebar_elements"
+      header:
+        overlay_color: "#333"
+        actions:
+          - label: "Browse source"
+            url: "https://github.com/masesgroup/JCOBridge-Examples"
+          - label: "Download"
+            url: "https://github.com/masesgroup/JCOBridge-Examples/releases/"

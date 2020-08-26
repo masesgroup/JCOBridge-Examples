@@ -1,10 +1,12 @@
-# JCOBridge main features
+# JCOBridge Examples
 
-Field proven
+## JCOBridge main features
+
+###Field proven
 
 Built on top of the field proven DLR plugin available in the [Sinapse platform](https://www.sinapsesystem.com), JCOBridge guarantees the best performance in JVM and CLR worlds integration.
 
-JVM ( Available only for .NET Framework on https://www.jcobridge.com, .NET Core available on supported OS and Architectures)
+###JVM ( Available only for .NET Framework on https://www.jcobridge.com, .NET Core available on supported OS and Architectures)
 >- Retrieve CLR Type
 >- Instantiate CLR object
 >- Invoke static methods
@@ -18,7 +20,7 @@ JVM ( Available only for .NET Framework on https://www.jcobridge.com, .NET Core 
 >- Integrate complex .NET Graphical user interfaces objects into AWT/Swing window
 >- User interface Controls, properties and events management
 
-CLR ( Available for .NET Framework on Windows and .NET Core on Windows and Linux, other platforms available on demand )
+###CLR ( Available for .NET Framework on Windows and .NET Core on Windows and Linux, other platforms available on demand )
 >- Retrieve JVM class
 >- Instantiate JVM objects
 >- Invoke static methods

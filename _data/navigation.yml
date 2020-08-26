@@ -1,14 +1,16 @@
 main:
   - title: "Home"
-    url: /
-  - title: "CLR Examples"
-    url: /CLR/
-  - title: "JVM Examples"
-    url: /JVM/
-  - title: "JCOBridge"
-    url: https://www.jcobridge.com
+    url: https://masesgroup.github.io/
+  - title: "Sinapse Platform"
+    url: https://masesgroup.github.io/sinapse/
+  - title: "JCOReflector"
+    url: https://masesgroup.github.io/JCOReflector/
+  - title: "JCO SWT Bridge"
+    url: https://masesgroup.github.io/JCOSWTBridge/
+  - title: "JCOBridge Examples"
+    url: https://masesgroup.github.io/JCOBridge-Examples/
 
-docs:
+sidebar_elements:
   - title: JCOBridge Examples
     children:
       - title: "Home"
@@ -36,7 +38,7 @@ docs:
 
   - title: External links
     children:
-      - title: "JCOReflector"
-        url: https://masesgroup.github.io/JCOReflector
-      - title: "JCOBridge"
+      - title: "Sinapse Platform Official site"
+        url: https://www.sinapsesystem.com
+      - title: "JCOBridge Official site"
         url: https://www.jcobridge.com
