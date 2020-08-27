@@ -3,13 +3,14 @@ main:
     url: https://masesgroup.github.io/
   - title: "Sinapse Platform"
     url: https://masesgroup.github.io/sinapse/
+  - title: "JCOBridge"
+    url: https://masesgroup.github.io/JCOBridge/
   - title: "JCOReflector"
     url: https://masesgroup.github.io/JCOReflector/
   - title: "JCO SWT Bridge"
     url: https://masesgroup.github.io/JCOSWTBridge/
   - title: "JCOBridge Examples"
-    url: https://masesgroup.github.io/JCOBridge-Examples/
-
+    url: https://masesgroup.github.io/JCOBridge-Examples
 sidebar_elements:
   - title: JCOBridge Examples
     children:
