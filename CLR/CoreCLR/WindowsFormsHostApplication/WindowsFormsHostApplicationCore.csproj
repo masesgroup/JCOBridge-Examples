@@ -2,18 +2,18 @@
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>net5.0-windows;netcoreapp3.1</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <DefineConstants>$(DefineConstants);NET_STANDARD;WINFORMS</DefineConstants>
 	<OutputPath>..\..\OutputCore</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JCOBridge" Version="2.2.0" />
+    <PackageReference Include="JCOBridge" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\Common\EmbeddedGraphic.cs">
+    <Compile Include="..\..\Common\EmbeddedGraphic.cs">
       <Link>EmbeddedGraphic.cs</Link>
     </Compile>
   </ItemGroup>

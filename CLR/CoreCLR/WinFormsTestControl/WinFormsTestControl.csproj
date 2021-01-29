@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<DefineConstants>$(DefineConstants);JCOBRIDGE_CORE</DefineConstants>
+    <TargetFrameworks>net5.0-windows;netcoreapp3.1</TargetFrameworks>
+	<OutputPath>..\..\OutputCore</OutputPath>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JCOBridge" Version="2.3.1" />
+  </ItemGroup>
+</Project>

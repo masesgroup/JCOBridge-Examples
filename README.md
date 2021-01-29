@@ -37,7 +37,7 @@ More information on [www.jcobridge.com](https://www.jcobridge.com)
 
 ## The Short way
 
-to explore the examples you need to perform the following steps:
+To explore the examples you need to perform the following steps:
 1. Download the last trial release from this [link](https://www.jcobridge.com/wpdownloads/)
 2. Install it following the wizard
 3. Clone this repository

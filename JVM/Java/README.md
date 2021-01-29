@@ -1,6 +1,8 @@
 ## Java to .NET Examples
 ### CSharp Class Use Examples
 
+** Examples related to .NET 5 needs to execute a compilation of CoreCLR.sln (See README.md in CLR\CoreCLR)
+
 This is a basic example where we call the simple class defined in CSharpClass.cs from a Java application.
 in the \CLR\CSharpClass\CSharpClass.cs we have a simple class
 
