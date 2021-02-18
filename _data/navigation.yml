@@ -11,6 +11,9 @@ main:
     url: https://masesgroup.github.io/JCOSWTBridge/
   - title: "JCOBridge Examples"
     url: https://masesgroup.github.io/JCOBridge-Examples
+  - title: "Data Distribution Manager"
+    url: https://masesgroup.github.io/DataDistributionManager
+    
 sidebar_elements:
   - title: JCOBridge Examples
     children:
