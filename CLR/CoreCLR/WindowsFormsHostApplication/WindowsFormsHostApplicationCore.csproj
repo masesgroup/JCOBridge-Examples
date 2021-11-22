@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JCOBridge" Version="2.3.2" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Include="..\..\Common\EmbeddedGraphic.cs">
       <Link>EmbeddedGraphic.cs</Link>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MASES.JCOBridge" Version="2.4.1" />
   </ItemGroup>
 </Project>

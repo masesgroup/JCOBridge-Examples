@@ -6,8 +6,7 @@
 	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	<UseWPF>true</UseWPF>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="JCOBridge" Version="2.3.2" />
+    <PackageReference Include="MASES.JCOBridge" Version="2.4.1" />
   </ItemGroup>
 </Project>
