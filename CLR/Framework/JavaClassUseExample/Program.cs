@@ -1,6 +1,4 @@
 ﻿using CommonTest;
-using MASES.JCOBridge.C2JBridge;
-using MASES.LicenseManager.Common;
 using System;
 
 namespace JavaClassUseExample
@@ -37,8 +35,7 @@ namespace JavaClassUseExample
         {
             try
             {
-                TestClass Test = new TestClass();
-                Test.Execute();
+                new TestClass().Execute();
             }
             catch (Exception e)
             {
