@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 	<DefineConstants>$(DefineConstants)</DefineConstants>
-    <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;net461</TargetFrameworks>
 	<OutputPath>..\..\OutputCore</OutputPath>
   </PropertyGroup>
 
@@ -13,8 +13,10 @@
     </Compile>
 	<Compile Include="Program.cs" />
   </ItemGroup>
-
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="JCOBridge" Version="2.3.2" />
+    <PackageReference Include="MASES.JCOBridge" Version="2.4.1" />
   </ItemGroup>
 </Project>

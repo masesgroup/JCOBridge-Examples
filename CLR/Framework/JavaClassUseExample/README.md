@@ -77,8 +77,7 @@ namespace JavaClassUseExample
         {
             try
             {
-                TestClass Test = new TestClass();
-                Test.Execute();
+                new TestClass().Execute();
             }
             catch (Exception e)
             {

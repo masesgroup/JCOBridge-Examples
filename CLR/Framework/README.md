@@ -39,7 +39,6 @@ public class JavaClass {
 in the \CLR\JavaClassUseExample\program.cs we have the simple .NET C# application
 
 ```c#
-using MASES.LicenseManager.Common;
 using MASES.JCBridge.C2JBridge;
 using System;
 
@@ -51,17 +50,19 @@ namespace JavaClassUseExample
         {
             try
             {
-                JCOBridge.Initialize();
+                new TestClass().Execute();
             }
-            catch (FallbackInTrialModeException) { }
-            catch (Exception e) { Console.WriteLine(e.Message); return; }
-            TestClass Test = new TestClass();
-            Test.Execute();
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("Press any key.");
+                Console.ReadKey();
+            }
         }
 
         class TestClass : SetupJVMWrapper
         {
-            public override string ClassPath { get { return @"C:\Program Files\MASES Group\JCOB\Core;..\..\JVM\Output"; } }
+            public override string ClassPath { get { return @"..\..\JVM\Output"; } }
 
             public void Execute()
             {

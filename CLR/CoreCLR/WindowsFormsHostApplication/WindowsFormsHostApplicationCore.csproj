@@ -2,19 +2,21 @@
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net5.0-windows;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net6.0-windows;net5.0-windows;netcoreapp3.1;net461</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <DefineConstants>$(DefineConstants);NET_STANDARD;WINFORMS</DefineConstants>
 	<OutputPath>..\..\OutputCore</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JCOBridge" Version="2.3.2" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Include="..\..\Common\EmbeddedGraphic.cs">
       <Link>EmbeddedGraphic.cs</Link>
     </Compile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MASES.JCOBridge" Version="2.4.1" />
   </ItemGroup>
 </Project>

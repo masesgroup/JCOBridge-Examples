@@ -43,8 +43,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C2JBridge, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cd9c739e9e88e81a, processorArchitecture=MSIL">
-      <HintPath>..\packages\JCOBridge.2.3.2\lib\net461\C2JBridge.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MASES.JCOBridge.2.4.1\lib\net461\C2JBridge.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -111,12 +110,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\JCOBridge.2.3.2\build\JCOBridge.targets" Condition="Exists('..\packages\JCOBridge.2.3.2\build\JCOBridge.targets')" />
+  <Import Project="..\packages\MASES.JCOBridge.2.4.1\build\mases.jcobridge.targets" Condition="Exists('..\packages\MASES.JCOBridge.2.4.1\build\mases.jcobridge.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\JCOBridge.2.3.2\build\JCOBridge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JCOBridge.2.3.2\build\JCOBridge.targets'))" />
+    <Error Condition="!Exists('..\packages\MASES.JCOBridge.2.4.1\build\mases.jcobridge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MASES.JCOBridge.2.4.1\build\mases.jcobridge.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
