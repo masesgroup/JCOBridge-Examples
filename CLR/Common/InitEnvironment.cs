@@ -5,8 +5,6 @@ namespace CommonTest
 {
     class BaseTestClass : SetupJVMWrapper
     {
-        public const string classPathSeparator = ";"; // windows
-
         public virtual string GetProjectClassPath()
         {
             return string.Empty;
@@ -17,11 +15,11 @@ namespace CommonTest
 
         }
 
-        // change if needed or us command line argument --JNIVerbosity
+        // change if needed or use command line argument --JNIVerbosity
         public override string JNIVerbosity { get { return base.JNIVerbosity; } }
-        // change if needed or us command line argument --JNIOutputFile
+        // change if needed or use command line argument --JNIOutputFile
         public override string JNIOutputFile { get { return base.JNIOutputFile; } }
-        // change if needed or us command line argument --ClassPath
+        // change if needed or use command line argument --ClassPath
 
         // the following line setup the classpath where JVM will search for classes
         // during runtime it is possible to dynamically add other path using a call like DynJVM.JVMHelper.addPath(<the path to add>);
@@ -30,11 +28,11 @@ namespace CommonTest
             get
             {
                 if (string.IsNullOrEmpty(base.ClassPath)) return GetProjectClassPath();
-                else return base.ClassPath + classPathSeparator + GetProjectClassPath();
+                else return base.ClassPath + ClassPathBuilder.PathSeparator + GetProjectClassPath();
             }
         }
 
-        // change if needed or us command line argument --JVMOptions
+        // change if needed or use command line argument --JVMOptions
         // the following code or commandline switch --JVMOptions adds all possible switch to the starting JVM.
         // for a complete list see Oracle documentation: https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
         public override IEnumerable<KeyValuePair<string, string>> JVMOptions
@@ -55,7 +53,7 @@ namespace CommonTest
             }
         }
 
-        // change if needed or us command line argument --JVMPackages
+        // change if needed or use command line argument --JVMPackages
         public override IEnumerable<string> JVMPackages
         {
             get
@@ -70,7 +68,7 @@ namespace CommonTest
             }
         }
 
-        // change if needed or us command line argument --JVMPath
+        // change if needed or use command line argument --JVMPath
         public override string JVMPath
         {
             get
