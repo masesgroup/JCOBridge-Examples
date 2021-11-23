@@ -15,6 +15,8 @@ The example also adds some little code stub which demostrate how it is simple to
 > *dotnet run --framework netcoreapp3.1 --JVMPath:/usr/lib/jvm/default-jvm/lib/server/libjvm.so*
 >
 
+where framework can any of netcoreapp3.1, net5.0, net6.0.
+
 Here the execution on a Linux operating systems of the original template:
 
 ![Alt text](images/execution.gif?raw=true "Linux Execution")

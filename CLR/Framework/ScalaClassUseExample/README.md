@@ -52,15 +52,7 @@ namespace ScalaClassUseExample
         {
             get
             {
-                string scalaBasePath = @"C:\Program Files (x86)\scala\lib";
-
-                var classPath = @"..\..\JVM\Scala\Output;"; // adding scala 2.13.1 libraries
-                classPath += Path.Combine(scalaBasePath, "jansi-1.12.jar") + classPathSeparator;
-                classPath += Path.Combine(scalaBasePath, "jline-2.14.6.jar") + classPathSeparator;
-                classPath += Path.Combine(scalaBasePath, "scala-compiler.jar") + classPathSeparator;
-                classPath += Path.Combine(scalaBasePath, "scala-library.jar") + classPathSeparator;
-                classPath += Path.Combine(scalaBasePath, "scalap-2.13.1.jar") + classPathSeparator;
-                return classPath;
+                return new ClassPathBuilder(GetProjectClassPath() + @"\*", @"C:\Program Files (x86)\scala\lib\*.jar").Build();
             }
         }
 
@@ -87,8 +79,7 @@ namespace ScalaClassUseExample
         {
             try
             {
-                TestClass Test = new TestClass();
-                Test.Execute();
+                new TestClass().Execute();
             }
             catch (Exception e)
             {
